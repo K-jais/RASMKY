@@ -40,12 +40,5 @@ beverages=[
         "price":"219",
         "type":"green",
         "img":"https://thenationpress.net/imgs/2020/12/1606854997blobid0.jpg"
-    },
-    {
-        "id":"7",
-        "name":"Hot Tea",
-        "price":"50",
-        "type":"green",
-        "img":"https://www.comunicaffe.com/wp-content/uploads/2019/07/hot-chocolate.jpg"
     }
 ]
