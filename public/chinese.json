@@ -54,5 +54,12 @@ chinese=[
         "price":"200",
         "type":"green",
         "img":"https://i2.wp.com/vegecravings.com/wp-content/uploads/2017/03/veg-manchurian-dry-recipe-step-by-step-instructions-10.jpg?fit=2412%2C1944&quality=65&strip=all&ssl=1"
+    },
+    {
+        "id":"9",
+        "name":"Chicken Chilli Dry",
+        "price":"239",
+        "type":"red",
+        "img":"https://recipesofhome.com/wp-content/uploads/2020/03/easy-chilli-chicken-recipe-720x540.jpg"
     }
 ]
