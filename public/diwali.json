@@ -1,0 +1,172 @@
+diwali={
+	"Shivam Zari Center":{
+		"shop":"Shivam Zari Center",
+		"address":"38 B, Tulsi Bagh, Dayal Bagh - 282005",
+		"phone":"8534921418",
+		"order":"Rs.399 to get free delivery",
+		"delivery-charges":"Rs.120",
+		"items":[
+			{
+				"name":"6 Inch Color Mala",
+				"quantity":"1 piece",
+				"price":"Rs.20"
+			},
+			{
+				"name":"7 Inch Mala",
+				"quantity":"1 piece",
+				"price":"Rs.30"
+			},
+			{
+				"name":"Flower Mala - Pink",
+				"quantity":"1 piece",
+				"price":"Rs.70"
+			},
+			{
+				"name":"Laxmi - Ganesh Mala",
+				"quantity":"1 piece",
+				"price":"Rs.5"
+			},
+			{
+				"name":"White Moti Mala",
+				"quantity":"1 piece",
+				"price":"Rs.10"
+			}
+		]
+	},
+	"Koms n Cakes":{
+		"shop":"Koms n Cakes",
+		"address":"38 B, Tulsi Bagh, Dayal Bagh - 282005",
+		"phone":"8534921418",
+		"order":"Rs.399 to get free delivery",
+		"delivery-charges":"Rs.120",
+		"items":[
+			{
+				"name":"6 Inch Color Mala",
+				"quantity":"1 piece",
+				"price":"Rs.20"
+			},
+			{
+				"name":"7 Inch Mala",
+				"quantity":"1 piece",
+				"price":"Rs.30"
+			},
+			{
+				"name":"Flower Mala - Pink",
+				"quantity":"1 piece",
+				"price":"Rs.70"
+			},
+			{
+				"name":"Laxmi - Ganesh Mala",
+				"quantity":"1 piece",
+				"price":"Rs.5"
+			},
+			{
+				"name":"White Moti Mala",
+				"quantity":"1 piece",
+				"price":"Rs.10"
+			}
+		]
+	},
+	"Laxmi Shringar":{
+		"shop":"Laxmi Shringar",
+		"address":"38 B, Tulsi Bagh, Dayal Bagh - 282005",
+		"phone":"8534921418",
+		"order":"Rs.399 to get free delivery",
+		"delivery-charges":"Rs.120",
+		"items":[
+			{
+				"name":"6 Inch Color Mala",
+				"quantity":"1 piece",
+				"price":"Rs.20"
+			},
+			{
+				"name":"7 Inch Mala",
+				"quantity":"1 piece",
+				"price":"Rs.30"
+			},
+			{
+				"name":"Flower Mala - Pink",
+				"quantity":"1 piece",
+				"price":"Rs.70"
+			},
+			{
+				"name":"Laxmi - Ganesh Mala",
+				"quantity":"1 piece",
+				"price":"Rs.5"
+			},
+			{
+				"name":"White Moti Mala",
+				"quantity":"1 piece",
+				"price":"Rs.10"
+			}
+		]
+	},
+	"Machla Ji ke Diye":{
+		"shop":"Machla Ji ke Diye",
+		"address":"38 B, Tulsi Bagh, Dayal Bagh - 282005",
+		"phone":"8534921418",
+		"order":"Rs.399 to get free delivery",
+		"delivery-charges":"Rs.120",
+		"items":[
+			{
+				"name":"6 Inch Color Mala",
+				"quantity":"1 piece",
+				"price":"Rs.20"
+			},
+			{
+				"name":"7 Inch Mala",
+				"quantity":"1 piece",
+				"price":"Rs.30"
+			},
+			{
+				"name":"Flower Mala - Pink",
+				"quantity":"1 piece",
+				"price":"Rs.70"
+			},
+			{
+				"name":"Laxmi - Ganesh Mala",
+				"quantity":"1 piece",
+				"price":"Rs.5"
+			},
+			{
+				"name":"White Moti Mala",
+				"quantity":"1 piece",
+				"price":"Rs.10"
+			}
+		]
+	},
+	"Crafty_sides":{
+		"shop":"Crafty_sides",
+		"address":"38 B, Tulsi Bagh, Dayal Bagh - 282005",
+		"phone":"8534921418",
+		"order":"Rs.399 to get free delivery",
+		"delivery-charges":"Rs.120",
+		"items":[
+			{
+				"name":"6 Inch Color Mala",
+				"quantity":"1 piece",
+				"price":"Rs.20"
+			},
+			{
+				"name":"7 Inch Mala",
+				"quantity":"1 piece",
+				"price":"Rs.30"
+			},
+			{
+				"name":"Flower Mala - Pink",
+				"quantity":"1 piece",
+				"price":"Rs.70"
+			},
+			{
+				"name":"Laxmi - Ganesh Mala",
+				"quantity":"1 piece",
+				"price":"Rs.5"
+			},
+			{
+				"name":"White Moti Mala",
+				"quantity":"1 piece",
+				"price":"Rs.10"
+			}
+		]
+	}
+}
