@@ -1,0 +1,51 @@
+beverages=[
+    {
+        "id":"32",
+        "name":"Hot Chocolate Classic",
+        "price":"139",
+        "type":"green",
+        "img":"https://www.barbarabakes.com/wp-content/uploads/2013/09/Classic-Hot-Cocoa-Barbara-Bakes.jpg"
+    },
+    {
+        "id":"33",
+        "name":"Hot Chocolate Tiramisu",
+        "price":"169",
+        "type":"green",
+        "img":"https://honestcooking.com/wp-content/uploads/2017/11/tiramisu-hot-chocolate-recipe-image-1.jpg"
+    },
+    {
+        "id":"34",
+        "name":"Hot Chocolate Fudge",
+        "price":"279",
+        "type":"green",
+        "img":"https://www.deliaonline.com/sites/default/files/styles/square_400/public/quick_media/chocolate-hot-chocolate-fudge-sundae.jpg?timestamp=1455028956"
+    },
+    {
+        "id":"35",
+        "name":"Chocolate Oreo Milkshake",
+        "price":"209",
+        "type":"green",
+        "img":"https://www.whiskaffair.com/wp-content/uploads/2019/04/Oreo-Milkshake-1-3.jpg"
+    },
+    {
+        "id":"36",
+        "name":"Kit-Kat Milkshake",
+        "price":"229",
+        "type":"green",
+        "img":"https://i.ytimg.com/vi/afDFYbNzOCs/maxresdefault.jpg"
+    },
+    {
+        "id":"37",
+        "name":"Chocolate Hazelnut Milkshake",
+        "price":"219",
+        "type":"green",
+        "img":"https://thenationpress.net/imgs/2020/12/1606854997blobid0.jpg"
+    },
+    {
+        "id":"38",
+        "name":"Hot Tea",
+        "price":"50",
+        "type":"green",
+        "img":"https://www.comunicaffe.com/wp-content/uploads/2019/07/hot-chocolate.jpg"
+    }
+]
