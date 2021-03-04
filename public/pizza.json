@@ -1,0 +1,142 @@
+pizza=[
+    {
+        "id":"84",
+        "name":"Margherita",
+        "price":"239",
+        "type":"green",
+        "img":"https://static.toiimg.com/thumb/56868564.cms?imgsize=1948751&width=800&height=800"
+    },
+    {
+        "id":"85",
+        "name":"Double Cheese Margherita",
+        "price":"375",
+        "type":"green",
+        "img":"https://4.imimg.com/data4/AA/AA/GLADMIN-/img-3389638cheese-20margherita-500x500.png"
+    },
+    {
+        "id":"86",
+        "name":"Farmhouse",
+        "price":"435",
+        "type":"green",
+        "img":"http://www.tuktukfoodsindia.com/wp-content/uploads/2018/11/farmhouse_pizza.jpg"
+    },
+    {
+        "id":"87",
+        "name":"Peppy Paneer",
+        "price":"345",
+        "type":"green",
+        "img":"https://i.pinimg.com/originals/3d/1d/9a/3d1d9a963eea6de910e32d53975cd2e1.jpg"
+    },
+    {
+        "id":"88",
+        "name":"Mexican Green Wave",
+        "price":"435",
+        "type":"green",
+        "img":"https://i.pinimg.com/originals/3d/1d/9a/3d1d9a963eea6de910e32d53975cd2e1.jpg"
+    },
+    {
+        "id":"89",
+        "name":"Veg Extravaganza",
+        "price":"470",
+        "type":"green",
+        "img":"https://www.dominos.co.in//files/items/Veg_Extravaganz.jpg"
+    },
+    {
+        "id":"90",
+        "name":"Achari Do Pyaza",
+        "price":"430",
+        "type":"green",
+        "img":"https://b.zmtcdn.com/data/dish_photos/1a7/d8cbcf6d27505efe421d27a1461311a7.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"
+    },
+    {
+        "id":"91",
+        "name":"Cheese n Corn",
+        "price":"345",
+        "type":"green",
+        "img":"https://www.comesum.com/wp-content/uploads/2020/01/cheesy-corn.jpg"
+    },
+    {
+        "id":"92",
+        "name":"Cheese n Tomato",
+        "price":"345",
+        "type":"green",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVm35_r_azPy_dE0Jw5X8lJH1PNl7pVEyDYQ&usqp=CAU"
+    },
+    {
+        "id":"93",
+        "name":"Pepper Barbecue & Onion",
+        "price":"435",
+        "type":"red",
+        "img":"https://www.dominos.co.in/files/items/Pepper_Barbeque.jpg"
+    },
+    {
+        "id":"94",
+        "name":"Chicken Golden Delight",
+        "price":"435",
+        "type":"red",
+        "img":"https://5.imimg.com/data5/LH/KC/MY-29540739/chicken-golden-delight-500x500.png"
+    },
+    {
+        "id":"95",
+        "name":"Chicken Fiesta",
+        "price":"470",
+        "type":"red",
+        "img":"https://www.dominos.co.in//files/items/chunky-chicken.png"
+    },
+    {
+        "id":"96",
+        "name":"Non Veg Supreme",
+        "price":"605",
+        "type":"red",
+        "img":"https://feenix.co.in/wp-content/uploads/2018/02/140418-Web-Pizza_NonVegSuperme.jpg"
+    },
+    {
+        "id":"97",
+        "name":"Chicken Pepperoni",
+        "price":"540",
+        "type":"red",
+        "img":"https://5.imimg.com/data5/BK/AP/PG/ANDROID-9431642/product-jpeg-500x500.jpg"
+    },
+    {
+        "id":"98",
+        "name":"Indi Chicken Tikka",
+        "price":"540",
+        "type":"red",
+        "img":"https://www.dominos.com.au/ManagedAssets/AU/product/P417/AU_P417_en_hero_7990.jpg?v-52456563"
+    },
+    {
+        "id":"99",
+        "name":"Work from Home Veg Treat",
+        "price":"320",
+        "type":"green",
+        "img":"https://images.dominos.co.in/PASTAPIZZAFAMILYTREAT.jpg"
+    },
+    {
+        "id":"100",
+        "name":"Movie Marathons Specials (N. Veg)",
+        "price":"395",
+        "type":"red",
+        "img":"https://images.dominos.co.in/meal_4_1_gb_combo_veg.jpg"
+    },
+    {
+        "id":"101",
+        "name":"Stay at Home Family Special (Veg)",
+        "price":"899",
+        "type":"green",
+        "img":"https://images.dominos.co.in/meal_4_party_combo_veg_extravaganza.jpg"
+    },
+    {
+        "id":"102",
+        "name":"Family House Party - Non Veg Value Combo",
+        "price":"899",
+        "type":"red",
+        "img":"https://images.dominos.co.in/meal_4_party_combo_chicken_golden_delight.jpg"
+    },
+    {
+        "id":"103",
+        "name":"Everyday Value 2 Med Deluxe Paneer Combo",
+        "price":"475",
+        "type":"green",
+        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_312,h_196,c_fill/uuuwfrlugwuspvjangqm"
+    }
+]
