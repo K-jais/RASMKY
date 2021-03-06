@@ -1,0 +1,65 @@
+southindian=[
+    {
+        "id":"104",
+        "name":"Plain Dosa",
+        "price":"65",
+        "type":"green",
+        "img":"https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa-500x500.jpg"
+    },
+    {
+        "id":"105",
+        "name":"Masala Dosa",
+        "price":"100",
+        "type":"green",
+        "img":"https://www.palatesdesire.com/wp-content/uploads/2019/09/Mysore_Masala_Dosa@Palates_Desire-e1593275925544.jpg"
+    },
+    {
+        "id":"106",
+        "name":"Rava Butter Dosa",
+        "price":"129",
+        "type":"green",
+        "img":"https://fforflavour.com/wp-content/uploads/2018/07/rava-dosa.jpg"
+    },
+    {
+        "id":"107",
+        "name":"Butter Masala Dosa",
+        "price":"110",
+        "type":"green",
+        "img":"https://www.palatesdesire.com/wp-content/uploads/2019/09/Mysore_Masala_Dosa@Palates_Desire-e1593275925544.jpg"
+    },
+    {
+        "id":"108",
+        "name":"Veg Uttapam",
+        "price":"80",
+        "type":"green",
+        "img":"https://www.archanaskitchen.com/images/archanaskitchen/1-Author/kitchennandoos/vegetable_uttapam_.jpg"
+    },
+    {
+        "id":"109",
+        "name":"Panner Uttapam",
+        "price":"80",
+        "type":"green",
+        "img":"https://img-global.cpcdn.com/recipes/9c97d237510b2583/751x532cq70/curd-sooji-paneer-uttapam-recipe-main-photo.jpg"
+    },
+    {
+        "id":"110",
+        "name":"Mix Veg Uttapam",
+        "price":"100",
+        "type":"green",
+        "img":"http://www.yummyfoodrecipes.in/resources/picture/org/Ragi-and-Oats-Uttapam.jpg"
+    },
+    {
+        "id":"111",
+        "name":"Special Uttapam",
+        "price":"110",
+        "type":"green",
+        "img":"https://3.bp.blogspot.com/-VfbUaJOLa4c/WIERqzV4J6I/AAAAAAAAUjY/oyRKc0xeE8ky-mUP8f_mVytqjZn5FbRugCLcB/s1600/Mini%2BUttapam%2B5.jpg"
+    },
+    {
+        "id":"112",
+        "name":"Idli(3 pcs)",
+        "price":"70",
+        "type":"green",
+        "img":"https://4.bp.blogspot.com/-7C3B7VPDVKc/XBKGp3-XlcI/AAAAAAAA4VY/wKe7qrJ-ntQlNN5e1fGksH62duvg6f8-gCLcBGAs/s1600/Instant-Suji-idli.jpg"
+    }
+]
