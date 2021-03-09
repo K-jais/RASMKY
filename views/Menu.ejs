@@ -1,0 +1,577 @@
+<%- include("partials/header")%>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23413e66' fill-opacity='0.12'%3E%3Cpath d='M24.37 16c.2.65.39 1.32.54 2H21.17l1.17 2.34.45.9-.24.11V28a5 5 0 0 1-2.23 8.94l-.02.06a8 8 0 0 1-7.75 6h-20a8 8 0 0 1-7.74-6l-.02-.06A5 5 0 0 1-17.45 28v-6.76l-.79-1.58-.44-.9.9-.44.63-.32H-20a23.01 23.01 0 0 1 44.37-2zm-36.82 2a1 1 0 0 0-.44.1l-3.1 1.56.89 1.79 1.31-.66a3 3 0 0 1 2.69 0l2.2 1.1a1 1 0 0 0 .9 0l2.21-1.1a3 3 0 0 1 2.69 0l2.2 1.1a1 1 0 0 0 .9 0l2.21-1.1a3 3 0 0 1 2.69 0l2.2 1.1a1 1 0 0 0 .86.02l2.88-1.27a3 3 0 0 1 2.43 0l2.88 1.27a1 1 0 0 0 .85-.02l3.1-1.55-.89-1.79-1.42.71a3 3 0 0 1-2.56.06l-2.77-1.23a1 1 0 0 0-.4-.09h-.01a1 1 0 0 0-.4.09l-2.78 1.23a3 3 0 0 1-2.56-.06l-2.3-1.15a1 1 0 0 0-.45-.11h-.01a1 1 0 0 0-.44.1L.9 19.22a3 3 0 0 1-2.69 0l-2.2-1.1a1 1 0 0 0-.45-.11h-.01a1 1 0 0 0-.44.1l-2.21 1.11a3 3 0 0 1-2.69 0l-2.2-1.1a1 1 0 0 0-.45-.11h-.01zm0-2h-4.9a21.01 21.01 0 0 1 39.61 0h-2.09l-.06-.13-.26.13h-32.31zm30.35 7.68l1.36-.68h1.3v2h-36v-1.15l.34-.17 1.36-.68h2.59l1.36.68a3 3 0 0 0 2.69 0l1.36-.68h2.59l1.36.68a3 3 0 0 0 2.69 0L2.26 23h2.59l1.36.68a3 3 0 0 0 2.56.06l1.67-.74h3.23l1.67.74a3 3 0 0 0 2.56-.06zM-13.82 27l16.37 4.91L18.93 27h-32.75zm-.63 2h.34l16.66 5 16.67-5h.33a3 3 0 1 1 0 6h-34a3 3 0 1 1 0-6zm1.35 8a6 6 0 0 0 5.65 4h20a6 6 0 0 0 5.66-4H-13.1z'/%3E%3Cpath id='path6_fill-copy' d='M284.37 16c.2.65.39 1.32.54 2H281.17l1.17 2.34.45.9-.24.11V28a5 5 0 0 1-2.23 8.94l-.02.06a8 8 0 0 1-7.75 6h-20a8 8 0 0 1-7.74-6l-.02-.06a5 5 0 0 1-2.24-8.94v-6.76l-.79-1.58-.44-.9.9-.44.63-.32H240a23.01 23.01 0 0 1 44.37-2zm-36.82 2a1 1 0 0 0-.44.1l-3.1 1.56.89 1.79 1.31-.66a3 3 0 0 1 2.69 0l2.2 1.1a1 1 0 0 0 .9 0l2.21-1.1a3 3 0 0 1 2.69 0l2.2 1.1a1 1 0 0 0 .9 0l2.21-1.1a3 3 0 0 1 2.69 0l2.2 1.1a1 1 0 0 0 .86.02l2.88-1.27a3 3 0 0 1 2.43 0l2.88 1.27a1 1 0 0 0 .85-.02l3.1-1.55-.89-1.79-1.42.71a3 3 0 0 1-2.56.06l-2.77-1.23a1 1 0 0 0-.4-.09h-.01a1 1 0 0 0-.4.09l-2.78 1.23a3 3 0 0 1-2.56-.06l-2.3-1.15a1 1 0 0 0-.45-.11h-.01a1 1 0 0 0-.44.1l-2.21 1.11a3 3 0 0 1-2.69 0l-2.2-1.1a1 1 0 0 0-.45-.11h-.01a1 1 0 0 0-.44.1l-2.21 1.11a3 3 0 0 1-2.69 0l-2.2-1.1a1 1 0 0 0-.45-.11h-.01zm0-2h-4.9a21.01 21.01 0 0 1 39.61 0h-2.09l-.06-.13-.26.13h-32.31zm30.35 7.68l1.36-.68h1.3v2h-36v-1.15l.34-.17 1.36-.68h2.59l1.36.68a3 3 0 0 0 2.69 0l1.36-.68h2.59l1.36.68a3 3 0 0 0 2.69 0l1.36-.68h2.59l1.36.68a3 3 0 0 0 2.56.06l1.67-.74h3.23l1.67.74a3 3 0 0 0 2.56-.06zM246.18 27l16.37 4.91L278.93 27h-32.75zm-.63 2h.34l16.66 5 16.67-5h.33a3 3 0 1 1 0 6h-34a3 3 0 1 1 0-6zm1.35 8a6 6 0 0 0 5.65 4h20a6 6 0 0 0 5.66-4H246.9z'/%3E%3Cpath d='M159.5 21.02A9 9 0 0 0 151 15h-42a9 9 0 0 0-8.5 6.02 6 6 0 0 0 .02 11.96A8.99 8.99 0 0 0 109 45h42a9 9 0 0 0 8.48-12.02 6 6 0 0 0 .02-11.96zM151 17h-42a7 7 0 0 0-6.33 4h54.66a7 7 0 0 0-6.33-4zm-9.34 26a8.98 8.98 0 0 0 3.34-7h-2a7 7 0 0 1-7 7h-4.34a8.98 8.98 0 0 0 3.34-7h-2a7 7 0 0 1-7 7h-4.34a8.98 8.98 0 0 0 3.34-7h-2a7 7 0 0 1-7 7h-7a7 7 0 1 1 0-14h42a7 7 0 1 1 0 14h-9.34zM109 27a9 9 0 0 0-7.48 4H101a4 4 0 1 1 0-8h58a4 4 0 0 1 0 8h-.52a9 9 0 0 0-7.48-4h-42z'/%3E%3Cpath d='M39 115a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm6-8a6 6 0 1 1-12 0 6 6 0 0 1 12 0zm-3-29v-2h8v-6H40a4 4 0 0 0-4 4v10H22l-1.33 4-.67 2h2.19L26 130h26l3.81-40H58l-.67-2L56 84H42v-6zm-4-4v10h2V74h8v-2h-8a2 2 0 0 0-2 2zm2 12h14.56l.67 2H22.77l.67-2H40zm13.8 4H24.2l3.62 38h22.36l3.62-38z'/%3E%3Cpath d='M129 92h-6v4h-6v4h-6v14h-3l.24 2 3.76 32h36l3.76-32 .24-2h-3v-14h-6v-4h-6v-4h-8zm18 22v-12h-4v4h3v8h1zm-3 0v-6h-4v6h4zm-6 6v-16h-4v19.17c1.6-.7 2.97-1.8 4-3.17zm-6 3.8V100h-4v23.8a10.04 10.04 0 0 0 4 0zm-6-.63V104h-4v16a10.04 10.04 0 0 0 4 3.17zm-6-9.17v-6h-4v6h4zm-6 0v-8h3v-4h-4v12h1zm27-12v-4h-4v4h3v4h1v-4zm-6 0v-8h-4v4h3v4h1zm-6-4v-4h-4v8h1v-4h3zm-6 4v-4h-4v8h1v-4h3zm7 24a12 12 0 0 0 11.83-10h7.92l-3.53 30h-32.44l-3.53-30h7.92A12 12 0 0 0 130 126z'/%3E%3Cpath d='M212 86v2h-4v-2h4zm4 0h-2v2h2v-2zm-20 0v.1a5 5 0 0 0-.56 9.65l.06.25 1.12 4.48a2 2 0 0 0 1.94 1.52h.01l7.02 24.55a2 2 0 0 0 1.92 1.45h4.98a2 2 0 0 0 1.92-1.45l7.02-24.55a2 2 0 0 0 1.95-1.52L224.5 96l.06-.25a5 5 0 0 0-.56-9.65V86a14 14 0 0 0-28 0zm4 0h6v2h-9a3 3 0 1 0 0 6H223a3 3 0 1 0 0-6H220v-2h2a12 12 0 1 0-24 0h2zm-1.44 14l-1-4h24.88l-1 4h-22.88zm8.95 26l-6.86-24h18.7l-6.86 24h-4.98zM150 242a22 22 0 1 0 0-44 22 22 0 0 0 0 44zm24-22a24 24 0 1 1-48 0 24 24 0 0 1 48 0zm-28.38 17.73l2.04-.87a6 6 0 0 1 4.68 0l2.04.87a2 2 0 0 0 2.5-.82l1.14-1.9a6 6 0 0 1 3.79-2.75l2.15-.5a2 2 0 0 0 1.54-2.12l-.19-2.2a6 6 0 0 1 1.45-4.46l1.45-1.67a2 2 0 0 0 0-2.62l-1.45-1.67a6 6 0 0 1-1.45-4.46l.2-2.2a2 2 0 0 0-1.55-2.13l-2.15-.5a6 6 0 0 1-3.8-2.75l-1.13-1.9a2 2 0 0 0-2.5-.8l-2.04.86a6 6 0 0 1-4.68 0l-2.04-.87a2 2 0 0 0-2.5.82l-1.14 1.9a6 6 0 0 1-3.79 2.75l-2.15.5a2 2 0 0 0-1.54 2.12l.19 2.2a6 6 0 0 1-1.45 4.46l-1.45 1.67a2 2 0 0 0 0 2.62l1.45 1.67a6 6 0 0 1 1.45 4.46l-.2 2.2a2 2 0 0 0 1.55 2.13l2.15.5a6 6 0 0 1 3.8 2.75l1.13 1.9a2 2 0 0 0 2.5.8zm2.82.97a4 4 0 0 1 3.12 0l2.04.87a4 4 0 0 0 4.99-1.62l1.14-1.9a4 4 0 0 1 2.53-1.84l2.15-.5a4 4 0 0 0 3.09-4.24l-.2-2.2a4 4 0 0 1 .97-2.98l1.45-1.67a4 4 0 0 0 0-5.24l-1.45-1.67a4 4 0 0 1-.97-2.97l.2-2.2a4 4 0 0 0-3.09-4.25l-2.15-.5a4 4 0 0 1-2.53-1.84l-1.14-1.9a4 4 0 0 0-5-1.62l-2.03.87a4 4 0 0 1-3.12 0l-2.04-.87a4 4 0 0 0-4.99 1.62l-1.14 1.9a4 4 0 0 1-2.53 1.84l-2.15.5a4 4 0 0 0-3.09 4.24l.2 2.2a4 4 0 0 1-.97 2.98l-1.45 1.67a4 4 0 0 0 0 5.24l1.45 1.67a4 4 0 0 1 .97 2.97l-.2 2.2a4 4 0 0 0 3.09 4.25l2.15.5a4 4 0 0 1 2.53 1.84l1.14 1.9a4 4 0 0 0 5 1.62l2.03-.87zM152 207a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm6 2a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-11 1a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-6 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm3-5a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-8 8a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm3 6a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm0 6a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm4 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm5-2a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm5 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm4-6a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm6-4a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-4-3a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm4-3a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-5-4a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm-24 6a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm16 5a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm7-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0zm86-29a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm19 9a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm-14 5a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm-25 1a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm5 4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm9 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm15 1a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm12-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm-11-14a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm-19 0a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm6 5a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm-25 15c0-.47.01-.94.03-1.4a5 5 0 0 1-1.7-8 3.99 3.99 0 0 1 1.88-5.18 5 5 0 0 1 3.4-6.22 3 3 0 0 1 1.46-1.05 5 5 0 0 1 7.76-3.27A30.86 30.86 0 0 1 246 184c6.79 0 13.06 2.18 18.17 5.88a5 5 0 0 1 7.76 3.27 3 3 0 0 1 1.47 1.05 5 5 0 0 1 3.4 6.22 4 4 0 0 1 1.87 5.18 4.98 4.98 0 0 1-1.7 8c.02.46.03.93.03 1.4v1h-62v-1zm.83-7.17a30.9 30.9 0 0 0-.62 3.57 3 3 0 0 1-.61-4.2c.37.28.78.49 1.23.63zm1.49-4.61c-.36.87-.68 1.76-.96 2.68a2 2 0 0 1-.21-3.71c.33.4.73.75 1.17 1.03zm2.32-4.54c-.54.86-1.03 1.76-1.49 2.68a3 3 0 0 1-.07-4.67 3 3 0 0 0 1.56 1.99zm1.14-1.7c.35-.5.72-.98 1.1-1.46a1 1 0 1 0-1.1 1.45zm5.34-5.77c-1.03.86-2 1.79-2.9 2.77a3 3 0 0 0-1.11-.77 3 3 0 0 1 4-2zm42.66 2.77c-.9-.98-1.87-1.9-2.9-2.77a3 3 0 0 1 4.01 2 3 3 0 0 0-1.1.77zm1.34 1.54c.38.48.75.96 1.1 1.45a1 1 0 1 0-1.1-1.45zm3.73 5.84c-.46-.92-.95-1.82-1.5-2.68a3 3 0 0 0 1.57-1.99 3 3 0 0 1-.07 4.67zm1.8 4.53c-.29-.9-.6-1.8-.97-2.67.44-.28.84-.63 1.17-1.03a2 2 0 0 1-.2 3.7zm1.14 5.51c-.14-1.21-.35-2.4-.62-3.57.45-.14.86-.35 1.23-.63a2.99 2.99 0 0 1-.6 4.2zM275 214a29 29 0 0 0-57.97 0h57.96zM72.33 198.12c-.21-.32-.34-.7-.34-1.12v-12h-2v12a4.01 4.01 0 0 0 7.09 2.54c.57-.69.91-1.57.91-2.54v-12h-2v12a1.99 1.99 0 0 1-2 2 2 2 0 0 1-1.66-.88zM75 176c.38 0 .74-.04 1.1-.12a4 4 0 0 0 6.19 2.4A13.94 13.94 0 0 1 84 185v24a6 6 0 0 1-6 6h-3v9a5 5 0 1 1-10 0v-9h-3a6 6 0 0 1-6-6v-24a14 14 0 0 1 14-14 5 5 0 0 0 5 5zm-17 15v12a1.99 1.99 0 0 0 1.22 1.84 2 2 0 0 0 2.44-.72c.21-.32.34-.7.34-1.12v-12h2v12a3.98 3.98 0 0 1-5.35 3.77 3.98 3.98 0 0 1-.65-.3V209a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4v-24c.01-1.53-.23-2.88-.72-4.17-.43.1-.87.16-1.28.17a6 6 0 0 1-5.2-3 7 7 0 0 1-6.47-4.88A12 12 0 0 0 58 185v6zm9 24v9a3 3 0 1 0 6 0v-9h-6z'/%3E%3Cpath d='M-17 191a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm19 9a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm-14 5a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm-25 1a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm5 4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm9 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm15 1a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm12-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2H4zm-11-14a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm-19 0a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2h-2zm6 5a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zm-25 15c0-.47.01-.94.03-1.4a5 5 0 0 1-1.7-8 3.99 3.99 0 0 1 1.88-5.18 5 5 0 0 1 3.4-6.22 3 3 0 0 1 1.46-1.05 5 5 0 0 1 7.76-3.27A30.86 30.86 0 0 1-14 184c6.79 0 13.06 2.18 18.17 5.88a5 5 0 0 1 7.76 3.27 3 3 0 0 1 1.47 1.05 5 5 0 0 1 3.4 6.22 4 4 0 0 1 1.87 5.18 4.98 4.98 0 0 1-1.7 8c.02.46.03.93.03 1.4v1h-62v-1zm.83-7.17a30.9 30.9 0 0 0-.62 3.57 3 3 0 0 1-.61-4.2c.37.28.78.49 1.23.63zm1.49-4.61c-.36.87-.68 1.76-.96 2.68a2 2 0 0 1-.21-3.71c.33.4.73.75 1.17 1.03zm2.32-4.54c-.54.86-1.03 1.76-1.49 2.68a3 3 0 0 1-.07-4.67 3 3 0 0 0 1.56 1.99zm1.14-1.7c.35-.5.72-.98 1.1-1.46a1 1 0 1 0-1.1 1.45zm5.34-5.77c-1.03.86-2 1.79-2.9 2.77a3 3 0 0 0-1.11-.77 3 3 0 0 1 4-2zm42.66 2.77c-.9-.98-1.87-1.9-2.9-2.77a3 3 0 0 1 4.01 2 3 3 0 0 0-1.1.77zm1.34 1.54c.38.48.75.96 1.1 1.45a1 1 0 1 0-1.1-1.45zm3.73 5.84c-.46-.92-.95-1.82-1.5-2.68a3 3 0 0 0 1.57-1.99 3 3 0 0 1-.07 4.67zm1.8 4.53c-.29-.9-.6-1.8-.97-2.67.44-.28.84-.63 1.17-1.03a2 2 0 0 1-.2 3.7zm1.14 5.51c-.14-1.21-.35-2.4-.62-3.57.45-.14.86-.35 1.23-.63a2.99 2.99 0 0 1-.6 4.2zM15 214a29 29 0 0 0-57.97 0h57.96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+     .bg-dark{
+      background-color:rgba(0, 0, 0, 0.0)!important;
+    }
+    .navbar-nav .nav-link{
+          color:#2196f3;
+          font-size: 20px;
+          font-weight:500;
+          padding-top:5px;
+          padding-bottom: 2px;
+        }
+        .navbar-nav .nav-link:hover{
+          color:#413e66;
+        }
+        #toggle_text{
+         color:#413e66;
+          font-size: 14px;
+          font-weight:500;
+          padding :5px 0px; 
+        }
+        #toggle_text:hover{
+          color:#2196f3;
+        }
+        .form-check-input{
+          background-color: #fff;
+          border-color: #30475e;
+          outline:none;
+          border:1px solid #413e66;
+          box-shadow: none;
+          margin-top: 0.45em;
+        }
+        .form-check-input:checked{
+          background-color:#2196f3 ;
+          border-color: #30475e;
+          outline: none;
+          box-shadow: none;
+        }
+        
+        #butt{
+          outline: none; 
+          border: 0px; 
+          box-sizing: none; 
+          background-color: transparent;
+          color:#2196f3;
+          font-size: 20px;
+          font-weight:500;
+          padding-top:5px;
+          padding-bottom: 2px;
+          
+        }
+         #butt:hover{
+          color:#413e66;
+         
+        }
+        #butt:focus{
+            outline: none;
+        } 
+        .hello1{
+          transition: transform .2s;
+          margin: 0 auto;
+        }
+        .hello1:hover {
+          -ms-transform: scale(1.2); 
+          -webkit-transform: scale(1.2); 
+          transform: scale(1.2); 
+        }
+        .hello{
+          transition: transform .2s;
+          margin: 0 auto;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .hello:hover {
+          -ms-transform: scale(1.05); 
+          -webkit-transform: scale(1.05); 
+          transform: scale(1.05); 
+        }
+        .top-top{
+        min-height: 300px;
+        box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+        background-color: #413e66;
+        }
+        #top{
+          margin-bottom: 50px;
+          margin-top:85px;
+        }
+        .last-top-section{
+          width:100%;
+          background-color: #413e66;
+          padding:40px 20px;
+        }
+        .para-text{
+          padding: 20px 80px;
+          border-bottom: 1px solid #2196f3;
+        }
+        .top-theme{
+          width:100%;
+          background-color: #413e66;
+          padding:40px 40px;
+        }
+        #middle{
+          margin-bottom: 100px;
+        }
+        .dihead{
+            color:#fff;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+        }
+        .dihead:hover{
+            color:#2196f3;
+        }
+        .item{
+            transition: transform .2s;
+            padding:20px 20px;
+            border:2px solid #413e66;
+            margin-bottom: 10px;
+        }
+        .item-name{
+          font-family: 'Roboto Slab',serif;
+          color:#413e66;
+        }
+        .item-price{
+          font-family: 'Roboto Slab',serif;
+          color:#413e66;
+        }
+        .item:hover{
+          -ms-transform: scale(1.01); 
+          -webkit-transform: scale(1.01); 
+          transform: scale(1.01); 
+        }
+        .add-item{
+          font-size: 12px;
+          margin-top: 7px;
+          border: 1.5px solid #2196f3;
+          color:#2196f3;
+          font-weight: 600;
+          padding:3px 10px;
+          background-color: #fff;
+        }
+        .number-item{
+          margin-top: 7px;
+          margin-left: 7px;
+          display:none;
+        }
+        .add-item:hover{
+          background-color: #2196f3;
+          color:#fff;
+        }
+        .add-item:focus{
+            outline: none;
+        }
+        .button-value{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .navbar-fixed-top.scrolled {
+          background-color: #f0f0f2 !important;
+          transition: background-color 200ms ease-in;
+        }
+        @media screen and (max-width: 750px) {
+          body{
+            margin:auto 20px;
+          }
+        }
+  </style>
+  <body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg bg-dark fixed-top navbar-fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4 me-4" href="/home"><img class="hello1" style="max-height:4rem;width:auto" src="./logo4.png"></a>
+        <button class="navbar-toggler border border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon border border-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+             <li class="nav-item">
+              <a style="font-size: 20px;" class="nav-link me-3 ms-3" aria-current="page" href=""><i class="fa fa-map-marker me-3" aria-hidden="true"></i><%= city %></a>
+            </li>
+          </ul>
+          <div class="navbar-nav ml-auto">
+             <form action="/cart" method="POST">
+              <input id="butt-cart" type="hidden" value="kush" name="carting">
+              <input id="butt-res" type="hidden" value="<%= restaurant.id %>" name="res_id">
+              <button id="butt" style="margin-right: 25px"><i class="fa fa-shopping-cart me-2" aria-hidden="true"></i>CART<span style="margin-left: 4px;background-color: #2196f3;color:#fff;border-radius: 50%;padding:0px 8px" class="item-count">0</span></button>
+            </form>
+            <input id="cart-value" type="hidden" value="<%= user.cart.carting.length %>">
+            <input id="items-items_name" type="hidden" value="<%= JSON.stringify(user.cart) %>">
+            <form style="display: none; color:white">
+              <input type="checkbox" name="refreshCheck"/>Force Refresh on Back Key Logic
+              </form>
+            <li class="nav-item">
+              <a class="nav-link me-3 ms-1" aria-current="page" href="/profile"><i class="fa fa-user me-2" aria-hidden="true"></i><span style="text-transform: uppercase;"><%= user.firstname %></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3 ms-1" aria-current="page" href="/logout"><i class="fa fa-sign-out me-2" aria-hidden="true"></i>LOGOUT</a>
+            </li>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <section id="top">
+        <div class="top-top">
+            <div class="container">
+                <div class="row">
+                    <div style="padding: 55px 0px;" class="col-md-3">
+                        <img style="height:190px;width:100%;border:2.5px solid #000" src="<%= restaurant.featured_image %>">
+                    </div>
+                    <div style="padding:48px 30px" class="col-md-9">
+                        <p style="color:#2196f3;font-size: 26px;font-family: 'Roboto Slab', serif;"><%= restaurant.name %></p>
+                        <p style="color:#fff;font-size: 16px;font-family: 'Roboto Slab', serif;"><%= restaurant.location.address %></p>
+                        <span style="color:#fff;font-size:13px"><span style="color:#fff;font-size:16px;padding:2px 5px;background-color: #2196f3 "><i class="fa fa-star me-1" aria-hidden="true"></i><%= restaurant.user_rating.aggregate_rating %></span>  (500+ ratings)</span>
+                        <span style="margin-left: 40px;color:#fff;font-size:15px"><i style="margin-right: 40px;font-size: 4px;" class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-inr me-1" aria-hidden="true"></i><%= restaurant.average_cost_for_two %> For Two</span>
+                        <p style="color:#fff;font-size: 16px;font-family: 'Roboto Slab', serif;margin-top: 18px;"><%= restaurant.cuisines %></p>
+                        <p style="color:#fff;font-size: 14px;font-family: 'Roboto Slab', serif;margin-top: 18px;">Timings :   <span style="color: #2196f3;"><%= restaurant.timings %></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section style="margin-bottom: 50px;" id="main">
+        <div class="container">
+            <div class="main-main">
+                <h1 style="color:#2196f3;font-family: 'Roboto Slab', serif;font-size: 32px;margin-bottom: 30px;"><i class="fa fa-columns me-3" aria-hidden="true"></i>Menu</h1>
+            </div>
+            <div class="main-middle">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div style="background-color: #413e66;padding:30px 20px;max-height: 100vh;" class="dishes fixed">
+
+                        </div>
+                    </div>
+                    <div style="padding:20px 50px;max-height: 600px;overflow-x: hidden;overflow-y: auto;" class="col-md-9">
+                        <section style="background-color: #FFF;margin-bottom: 30px;" id="Cakes&Pastries">
+                            <p style="padding-bottom:3px;color:#413e66;font-size: 25px;font-family:'Roboto Slab',serif;margin-bottom: 20px;border-bottom: 2px solid #413e66;">Cakes & Pastries</p>
+                            <div class="bakery">
+                                
+                            </div>
+                        </section>
+                        <section style="background-color: #FFF;margin-bottom: 30px;" id="FastFood">
+                          <p style="padding-bottom:3px;color:#413e66;font-size: 25px;font-family:'Roboto Slab',serif;margin-bottom: 20px;border-bottom: 2px solid #413e66;">FastFood</p>
+                          <div class="fastfood">
+                              
+                          </div>
+                        </section>
+                        <section style="background-color: #FFF;margin-bottom: 30px;" id="NorthIndian">
+                          <p style="padding-bottom:3px;color:#413e66;font-size: 25px;font-family:'Roboto Slab',serif;margin-bottom: 20px;border-bottom: 2px solid #413e66;">NorthIndian</p>
+                          <div class="northindian">
+                              
+                          </div>
+                        </section>
+                        <section style="background-color: #FFF;margin-bottom: 30px;" id="SouthIndian">
+                          <p style="padding-bottom:3px;color:#413e66;font-size: 25px;font-family:'Roboto Slab',serif;margin-bottom: 20px;border-bottom: 2px solid #413e66;">SouthIndian</p>
+                          <div class="southindian">
+                              
+                          </div>
+                      </section>
+                      <section style="background-color: #FFF;margin-bottom: 30px;" id="Pizza">
+                        <p style="padding-bottom:3px;color:#413e66;font-size: 25px;font-family:'Roboto Slab',serif;margin-bottom: 20px;border-bottom: 2px solid #413e66;">Pizza</p>
+                        <div class="pizza">
+                            
+                        </div>
+                      </section>
+                      <section style="background-color: #FFF;margin-bottom: 30px;" id="Chinese">
+                      <p style="padding-bottom:3px;color:#413e66;font-size: 25px;font-family:'Roboto Slab',serif;margin-bottom: 20px;border-bottom: 2px solid #413e66;">Chinese</p>
+                      <div class="chinese">
+                          
+                      </div>
+                      </section>
+                      <section style="background-color: #FFF;margin-bottom: 30px;" id="Beverages">
+                      <p style="padding-bottom:3px;color:#413e66;font-size: 25px;font-family:'Roboto Slab',serif;margin-bottom: 20px;border-bottom: 2px solid #413e66;">Beverages</p>
+                      <div class="beverages">
+                      
+                      </div>
+                      </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="cities">
+      <div class="top-notch">
+        <h1 style="padding-bottom:10px;border-bottom:1.5px solid #2196f3;font-family:'Roboto Slab', serif;color:#2196f3;font-size: 35px;text-align: center;margin-bottom:35px">SERVICEABLE CITIES</h1>
+        <div style="margin-top:10px;margin-bottom: 40px"class="cities-number">
+          <div class="container">
+            <div class="row cities1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="last-down">
+        <div class="last-top-section">
+          <h1 style="font-family:'Roboto Slab', serif;color:#2196f3;font-size: 30px;text-align: center">ABOUT US</h1>
+          <div class="para-text">
+            <p style="color:#fff">Rasmky is an Indian restaurant aggregator and highest-valued online food ordering and delivery platform. It provides information, menus and user-reviews of restaurants as well as food delivery options from partner restaurants in select cities. From any restaurant to your door, just make a list and we’ll make it disappear. Just Rasmky It!</p>
+            <p style="color:#fff">We are a community that aims to build a comfortable and health-conscious market environment. We dream to create an online marketing platform that maximizes the profit and comfort of both our consumers and retailers.</p>
+          </div>
+          <div class="container">
+            <div style="margin:70px 0px" class="row">
+              <div class="col-lg-3 col-md-6">
+                <img style="max-height:10rem;width:auto" src="./logo4.png">
+              </div>
+              <div style="color:#fff" class="col-lg-3 col-md-6">
+                <h5 style="font-family:'Roboto Slab', serif;color:#2196f3;margin-bottom: 30px">RASMKY</h5>
+                <p>Home</p>
+                <p>Features</p>
+                <p>Services</p>
+                <p>Blogs</p>
+                <p>Merchants</p>
+                <p>Terms of service</p>
+                <p>Privacy Policy</p>
+              </div>
+              <div style="color:#fff" class="col-lg-3 col-md-6">
+                <h5 style="font-family:'Roboto Slab', serif;color:#2196f3;margin: 30px 0px">CONTACT US</h5>
+                <p><span>Phone:</span> +91 7007145851</p>
+                <p style="margin-bottom: 50px"><span>Email:</span> kushjaiswal1836@gmail.com</p>
+                  <i style="margin-right: 15px" class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  <i style="margin-right: 15px" class="fa fa-instagram" aria-hidden="true"></i>
+                  <i style="margin-right: 15px" class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <i style="margin-right: 15px" class="fa fa-github" aria-hidden="true"></i>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <img style="width:300px;height: 300px" src="./delivery.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <script src="./bakery.json"></script>
+    <script src="./beverages.json"></script>
+    <script src="./chinese.json"></script>
+    <script src="./fastfood.json"></script>
+    <script src="./northindian.json"></script>
+    <script src="./pizza.json"></script>
+    <script src="./southindian.json"></script>
+    <script>
+      window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    window.location.reload();
+  }
+});
+        $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+      var arr=['Mumbai','Delhi','Bangalore','Hyderabad','Ahmedabad','Chennai','Kolkata','Surat','Pune','Jaipur','Lucknow','Kanpur','Nagpur','Indore','Thane','Bhopal','Visakhapatnam','Patna','Vadodara','Ghaziabad','Ludhiana','Agra','Nashik','Ranchi','Faridabad','Meerut','Rajkot','Varanasi','Srinagar','Auranagabad','Amritsar','Allahabad','Howrah','Gwalior','Jabalpur','Coimbatore','Vijaywada','Jodhpur','Madurai','Raipur','Kota','Chandigarh','Guwahati','Mysore','Bareily','Gurugram','Noida','Jammu'];
+      var arr1=['Cakes&Pastries','FastFood','NorthIndian','SouthIndian','Pizza','Chinese','Beverages'];
+      var count=0;
+      
+      
+      var number=parseInt($('#cart-value').attr('value'));
+      number=number-1;
+      var numtext=number.toString();
+      $('#butt .item-count').text(numtext);
+      for(let i=0;i<arr.length;i++)
+      {
+        $('.cities1').append("<div style='text-align:center;padding:10px 10px' class='col-md-6 col-lg-3'><h1 style='font-size:16px;color:#413e66'>"+arr[i]+"</h1></div>");
+      }
+      for(let i=0;i<arr1.length;i++)
+      {
+          $('.dishes').append("<a style='text-decoration:none' href='#"+arr1[i]+"'><p class='dihead'>"+arr1[i]+"</p></a>");
+      }
+      function assign(bakery1,a){
+        for(let i=0;i<bakery1.length;i++)
+      {
+          $(a).append("<div class='item'><span name='"+bakery1[i].type+"' class='item-type' style='font-size: 16px;color:"+bakery1[i].type+"'><i class='fa fa-dot-circle-o' aria-hidden='true'></i><img class='"+bakery1[i].id+"' style='height:80px;width:100px;float:right' src='"+bakery1[i].img+"'></span><br><span class='item-name'>"+bakery1[i].name+"</span><br><span class='item-price'><i class='fa fa-inr me-1' aria-hidden='true'></i>"+bakery1[i].price+"</span><br><button class='add-item'><span>ADD</span><i class='fa fa-plus ms-1' aria-hidden='true'></i><input type='hidden' value='0'></input></button><span class='number-item' style='width:66px;height:27px;background-color:white;padding:0px 3px;border:1.5px solid #413e66'><span class='button-minus' style='float:left;'><i style='font-size: 15px;border-right:1px solid black;padding-right: 5px;color:#2196f3' class='fa fa-minus' aria-hidden='true'></i></span><span class='button-value' style='margin:0px 6px;color:#413e66'>1</span><span class='button-plus' style='float:right;'><i style='font-size: 15px;border-left:1px solid black;padding-left: 5px;color:#2196f3' class='fa fa-plus' aria-hidden='true'></i></span></span></div>");
+        }
+      }
+      assign(bakery,'.bakery');
+      assign(fastfood,'.fastfood');
+      assign(northindian,'.northindian');
+      assign(southindian,'.southindian');
+      assign(pizza,'.pizza');
+      assign(chinese,'.chinese');
+      assign(beverages,'.beverages');
+      var cart=[{
+        name:'Kush',
+        price:'1 crore',
+        type:'yellow',
+        quantity:'100',
+        number:'1263636'
+      }];
+      var cartingsdr=JSON.parse($('#items-items_name').attr('value'));
+      var restaurant_id=cartingsdr.id;
+      cartingsdr=cartingsdr.carting;
+      
+      if(number>0 && restaurant_id == $('#butt-res').attr('value'))
+      {
+        count=cartingsdr.length-1;
+        console.log('hihello');
+        for(let i=1;i<cartingsdr.length;i++)
+        {
+          var d={
+          name:'hello',
+          price:'bye',
+          type:'pink',
+          quantity:'20',
+          number:'123456'
+          };
+          var name='.'+cartingsdr[i].number;
+          console.log(name);
+          $(name).parent('span').parent('.item').children('.add-item').css('background','#2196f3');
+          $(name).parent('span').parent('.item').children('.add-item').css('color','#fff');
+          $(name).parent('span').parent('.item').children('.add-item').children('span').text('ADDED');
+          $(name).parent('span').parent('.item').children('.add-item').children('i').attr('class','fa fa-check ms-1');
+          $(name).parent('span').parent('.item').children('.add-item').children('input[type="hidden"]').attr('value','1');
+          $(name).parent('span').parent('.item').children('.add-item').parent('.item').children('.number-item').children('.button-value').text(cartingsdr[i].quantity);
+          $(name).parent('span').parent('.item').children('.add-item').parent('.item').children('.number-item').css('display','block');
+          d.name=cartingsdr[i].name;
+          d.price=cartingsdr[i].price;
+          d.type=cartingsdr[i].type;
+          d.quantity=cartingsdr[i].quantity;
+          d.number=cartingsdr[i].number;
+          console.log(d);
+          cart.push(d);
+        }
+      }
+      $('.add-item').click(function(){
+        const offset=$(this).parent('.item').children('.add-item').children('input[type="hidden"]').val();
+        if(offset == 0)
+        {
+          $(this).css('background','#2196f3');
+          $(this).css('color','#fff');
+          $(this).children('span').text('ADDED');
+          $(this).children('i').attr('class','fa fa-check ms-1');
+          $(this).children('input[type="hidden"]').attr('value','1');
+          const b={
+          name:'hello',
+          price:'bye',
+          type:'pink',
+          quantity:'20',
+          number:'123456'
+          };
+          b.name=$(this).parent('.item').children('.item-name').text();
+          b.price=$(this).parent('.item').children('.item-price').text();
+          b.type=$(this).parent('.item').children('.item-type').attr('name');
+          b.quantity=$(this).parent('.item').children('.number-item').children('.button-value').text();
+          b.number=$(this).parent('.item').children('.item-type').children('img').attr('class');
+          cart.push(b);
+          $(this).parent('.item').children('.number-item').css('display','block');
+          let cart1 = $('#butt');
+          let imgtodrag = $(this).parent('.item').children('.item-type').children('img');
+          if (imgtodrag) {
+            var imgclone = imgtodrag.clone().offset({
+              top: imgtodrag.offset().top,
+              left: imgtodrag.offset().left
+              }).css({
+                'opacity': '0.8',
+                'position': 'absolute',
+                'height': '50px',
+                'width': '70px',
+                'z-index': '100'
+              }).appendTo($('body')).animate({
+                'top': cart1.offset().top + 20,
+                'left': cart1.offset().left + 30,
+                'width': 75,
+                'height': 75
+              }, 1000, 'easeInOutExpo');
+
+              setTimeout(function(){
+                count++;
+                $("#butt .item-count").text(count);
+              }, 1500);
+
+              imgclone.animate({
+                'width': 0,
+                'height': 0
+              }, function(){
+                $(this).detach()
+              });
+            }
+        }
+        else if(offset == 1)
+        {
+          $(this).css('background','#fff');
+          $(this).css('color','#2196f3');
+          $(this).children('span').text('ADD');
+          $(this).children('i').attr('class','fa fa-plus ms-1');
+          $(this).children('input[type="hidden"]').attr('value','0');
+          const name=$(this).parent('.item').children('.item-name').text();
+          var index=-1;
+
+          for(let i=0;i<cart.length;i++)
+          {
+            if(cart[i].name == name)
+            {
+              index=i;
+            }
+          }
+          console.log(index);
+          cart=cart.slice(0, index).concat(cart.slice(index + 1, cart.length));
+          $(this).parent('.item').children('.number-item').css('display','none');
+          count--;
+          $("#butt .item-count").text(count);
+        }
+        
+      });
+     
+      $('#butt').click(function(){
+        console.log(cart);
+        $('#butt-cart').attr('value',JSON.stringify(cart));
+        console.log($('#butt-cart').val());
+      });
+      $('.button-minus').click(function(){
+        var text=$(this).parent('.number-item').children('.button-value').text();
+        if(text == 1)
+          $(this).parent('.number-item').children('.button-value').text('1');
+        else
+        {
+          var value=parseInt(text);
+          value--;
+          text=value.toString();
+          $(this).parent('.number-item').children('.button-value').text(text);
+        }
+        var text2=$(this).parent('.number-item').parent('.item').children('.item-name').text();
+        for(let i=0;i<cart.length;i++)
+        {
+          if(cart[i].name == text2)
+          {
+            cart[i].quantity=$(this).parent('.number-item').children('.button-value').text();
+            break;
+          }
+        }
+      });
+      $('.button-plus').click(function(){
+        var text=$(this).parent('.number-item').children('.button-value').text();
+        if(text == 9)
+          $(this).parent('.number-item').children('.button-value').text('9');
+        else
+        {
+          var value=parseInt(text);
+          value++;
+          text=value.toString();
+          $(this).parent('.number-item').children('.button-value').text(text);
+        }
+        var text2=$(this).parent('.number-item').parent('.item').children('.item-name').text();
+        for(let i=0;i<cart.length;i++)
+        {
+          if(cart[i].name == text2)
+          {
+            cart[i].quantity=$(this).parent('.number-item').children('.button-value').text();
+            break;
+          }
+        }
+      });
+      $('.add-item-submit').click(function(){
+        console.log(cart);
+      });
+      
+    </script>
+  </body>
+</html>
